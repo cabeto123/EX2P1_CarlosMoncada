@@ -23,6 +23,7 @@ public class EX2_P2_CarlosMoncada {
             System.out.println("1.Ejercicio 1");
             System.out.println("2.Ejercicio 2");
             System.out.println("3.Calculadora Polaca");
+            System.out.println("4.Salir");
             opcion = entrada.nextInt();
             switch (opcion) {
                 case 1:int cantpalabras = (int) ((Math.random() * (6 - 3)) + 3);
@@ -36,6 +37,7 @@ public class EX2_P2_CarlosMoncada {
             codigosascii=formato.ordenar(palabrasx);
             formato.imprimir(codigosascii);
             break;
+                    
                    
 
                 case 2: ArrayList<String> palabras = new ArrayList<String>();

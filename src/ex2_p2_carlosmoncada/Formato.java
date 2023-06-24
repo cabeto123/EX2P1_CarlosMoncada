@@ -21,11 +21,12 @@ ArrayList<Integer> codigosascii= new ArrayList<Integer>();
         this.cantletrasprimeraultima = cantletrasprimeraultima;
     }
     public void imprimir(ArrayList<Integer> codigosascii){
+        
         for (int i = 0; i < codigosascii.size(); i++) {
             if (i==codigosascii.size()-1) {
-                System.out.println(codigosascii.get(i));
+                System.out.print(codigosascii.get(i));
             }else{
-                System.out.println(codigosascii.get(i)+"_");
+                System.out.print(codigosascii.get(i)+"_");
             }
   
         }
