@@ -25,7 +25,17 @@ public class EX2_P2_CarlosMoncada {
             System.out.println("3.Calculadora Polaca");
             opcion = entrada.nextInt();
             switch (opcion) {
-                case 1:
+                case 1:int cantpalabras = (int) ((Math.random() * (6 - 3)) + 3);
+        
+        int cantletrasprimeraultima = (int) ((Math.random() * (5 - 3)) + 3);
+            Formato formato= new Formato(cantpalabras,cantletrasprimeraultima);
+            formato.formato();
+            ArrayList<String> palabrasx = new ArrayList<String>();
+            ArrayList<Integer> codigosascii= new ArrayList<Integer>();
+            palabrasx=formato.getPalabras();
+            codigosascii=formato.ordenar(palabrasx);
+            formato.imprimir(codigosascii);
+            break;
                    
 
                 case 2: ArrayList<String> palabras = new ArrayList<String>();
